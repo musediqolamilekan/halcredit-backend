@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Guarantor } from 'src/guarantors/schemas/guarantors.schema';
 import { User } from 'src/user/schemas/user.schema';
-import { sendEmail } from 'src/utils/email.utils';
+import { sendEmail } from '../utils/sendEmail';
 
 @Injectable()
 export class EmailService {
