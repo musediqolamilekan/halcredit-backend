@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.8;
+        background-color: #fafafa;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #333;
+      }
+      h3 {
+        color: #ffffff;
+        background-color: #333;
+        padding: 10px;
+      }
+      p {
+        color: #666;
+      }
+      a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      .footer {
+        background: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        color: #777;
+        border-top: 1px solid #eeeeee;
+      }
+      .footer p {
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: left">
+        <div style="padding-bottom: 20px">
+          <img
+            src="https://halcredit.com/wp-content/uploads/2023/07/halcredit-black.png"
+            alt="Company"
+            style="width: 120px"
+          />
+        </div>
+      </div>
+      <h2>Welcome and Next Steps</h2>
+      <p>Dear <%= firstName %>,</p>
+
+      <p>Thank you for your interest in investing with us.</p>
+
+      <p>
+        These are the steps that we need to take to complete your investment in
+        this round
+      </p>
+
+      <h3>Step 1: Complete our KYC</h3>
+      <p>Please use the link below to complete the identity confirmation.</p>
+
+      <p>
+        <a href=<%= verificationLink %>>Know-Your-Customer (KYC) Form</a>
+      </p>
+
+      <p>
+        This is a requirement by law as a potential shareholder of a private
+        company.
+      </p>
+
+      <h3>Step 2: Transfer Instructions</h3>
+      <p>
+        Once the KYC process has been confirmed, you will receive an email from
+        us with the bank details and instructions for the transfer. Please note
+        that all transfers have to be made into the company’s USD account. If
+        you need assistance with transferring your funds, kindly reach out to
+        the team. We will provide all the necessary details for all
+        international transfers.
+      </p>
+
+      <h3>Step 3: Forward Transfer Receipt</h3>
+      <p>
+        Once your transfer has been made, kindly forward your transaction
+        receipt or telex copy to this email: investor@halcredit.com or + 234
+        7042915411 or +234 8029093009.
+      </p>
+
+      <p>
+        We will send a confirmation receipt upon receiving your investment
+        amount. Please allow 3 - 4 days for us to confirm all international
+        transfers.
+      </p>
+
+      <h3>Step 4: Investment Receipt</h3>
+      <p>
+        We will forward an investment receipt to you to confirm your investment
+        in this round.
+      </p>
+
+      <h3>Step 5: Sign SAFE Contract</h3>
+      <p>
+        We will forward the SAFE contract to your email. Your name, passport
+        number and signature will be on this contract and will be used to
+        convert your investment in our next priced round at the terms that have
+        been stipulated on the investment page. And this completes your
+        investment in the Halcredit Pre-seed Private Angel Round 2023.
+      </p>
+
+      <p>Best Regards,</p>
+      <p>Halcredit Team</p>
+
+      <div class="footer">
+         <p>Unsubscribe</p>
+        <p>invest@halcredit.com</p>
+        <p>+ 234 7042915411 or +234 8029093009</p>
+        <p>https://www.halcredit.com</p>
+      </div>
+    </div>
+  </body>
+</html>

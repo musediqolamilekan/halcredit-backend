@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .header {
+        color: #444;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .content {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Investor Account Update</div>
+      <div class="content">
+        <p>Dear Admin,</p>
+        <p>An investor account has been updated. Below are the details:</p>
+        <p>Name: <%= fullName %></p>
+        <p>Investor ID: <%= investorId %></p>
+        <p>Email: <%= email %></p>
+        <p>Amount: <%= amount %></p>
+        <p>Passport ID: <%= passportID %></p>
+        <p>Country of Passport: <%= countryPassport %></p>
+        <p>Country of Residence: <%= country %></p>
+        <p>Gender: <%= gender %></p>
+        <p>Date of Birth: <%= dateOfBirth %></p>
+        <p>Please review the changes.</p>
+        <p>Best Regards,</p>
+        <p>Halcredit Team</p>
+      </div>
+    </div>
+  </body>
+</html>
