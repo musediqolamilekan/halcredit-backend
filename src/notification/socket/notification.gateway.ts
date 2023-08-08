@@ -15,7 +15,7 @@ import {
 } from '../schemas/notification.schema';
 import createLogger from 'src/service/winston.service';
 import { NotificationDto } from '../dto/notification.dto';
-import { TokenValidationService } from 'src/service/tokenValidation.service';
+import { TokenValidationService } from '../../service/tokenValidation.service';
 import { WsJwtGuard } from 'src/service/webSocket.guard';
 import { UseGuards } from '@nestjs/common';
 
