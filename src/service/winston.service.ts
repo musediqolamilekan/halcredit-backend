@@ -25,21 +25,21 @@ function createLogger(service: string, filename: string) {
     defaultMeta: { service },
     transports: [
       new winston.transports.File({
-        filename: path.join('logs', filename),
+        filename: path.join('/tmp', filename),
         level: 'error',
         maxsize: 5 * 1024 * 1024, // 5MB
         maxFiles: 5,
         tailable: true,
       }),
       new winston.transports.File({
-        filename: path.join('logs', filename),
+        filename: path.join('/tmp', filename),
         level: 'info',
         maxsize: 5 * 1024 * 1024,
         maxFiles: 5,
         tailable: true,
       }),
       new winston.transports.File({
-        filename: path.join('logs', filename),
+        filename: path.join('/tmp', filename),
         level: 'warn',
         maxsize: 5 * 1024 * 1024,
         maxFiles: 5,
